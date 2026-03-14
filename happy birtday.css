@@ -1,82 +1,71 @@
-body{
-  margin:0;
-  overflow:hidden;
-  background:#111;
-  font-family:Verdana;
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+p {
+  margin: 0 0;
+  position: absolute;
+  font: 16px Verdana;
+  color: #eee;
+  height: 25px;
+  top: calc(100vh - 30px);
+  text-shadow: 0 0 2px white;
+}
+p a {
+  text-decoration: none;
+  color: #aaa;
 
-canvas{
-  position:absolute;
-  top:0;
-  left:0;
-  z-index:10;
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #111;
+  font-family: Verdana;
 }
+span {
+  font-size: 11px;
 
 /* LEFT PHOTO */
 
 #photo-left{
-  position:absolute;
-  left:40px;
-  top:50%;
-  transform:translateY(-50%);
-  width:180px;
-  height:220px;
-  object-fit:cover;
-  border-radius:12px;
-  border:4px solid white;
-  box-shadow:0 0 20px rgba(255,255,255,0.6);
-  z-index:2;
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 160px;
+  border-radius: 15px;
+  border: 4px solid white;
+  box-shadow: 0 0 20px rgba(255,255,255,0.6);
+  z-index: 5;
 }
+p > a:first-of-type {
+  font-size: 20px;
 
 /* RIGHT PHOTO */
 
 #photo-right{
-  position:absolute;
-  right:40px;
-  top:50%;
-  transform:translateY(-50%);
-  width:180px;
-  height:220px;
-  object-fit:cover;
-  border-radius:12px;
-  border:4px solid white;
-  box-shadow:0 0 20px rgba(255,255,255,0.6);
-  z-index:2;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 160px;
+  border-radius: 15px;
+  border: 4px solid white;
+  box-shadow: 0 0 20px rgba(255,255,255,0.6);
+  z-index: 5;
 }
+body {
+  overflow: hidden;
 
-/* MESSAGE */
+/* FROM MESSAGE */
 
 #from-message{
-  position:absolute;
-  bottom:40px;
-  width:100%;
-  text-align:center;
-  font-size:22px;
-  color:white;
-  text-shadow:0 0 10px rgba(255,255,255,0.8);
-  letter-spacing:1px;
-  z-index:20;
-}
-
-/* MOBILE SCALING */
-
-@media (max-width:768px){
-
-  #photo-left{
-    left:10px;
-    width:110px;
-    height:150px;
-  }
-
-  #photo-right{
-    right:10px;
-    width:110px;
-    height:150px;
-  }
-
-  #from-message{
-    font-size:16px;
-    bottom:20px;
-  }
-
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  text-shadow: 0 0 10px rgba(255,255,255,0.8);
+  letter-spacing: 1px;
 }
